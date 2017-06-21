@@ -1,6 +1,6 @@
 # rtx-luahttpd
 
-YAMAHA RTX シリーズの lua スクリプト実行機能で動作する HTTP サーバです。
+YAMAHA RTX シリーズの lua スクリプト実行機能で動作する HTTP サーバです。  
 RTX 自体の GUI 設定とは異なるポートで動かすことが可能です。
 
 デフォルトのポート番号は 11111 です。
@@ -19,12 +19,17 @@ lua スクリプトを tftp で RTX に転送する。
 
 ### RTX
 
+lua スクリプトの実行。
+
 * lua luahttpd.lua
+
+lua スクリプトの終了。
+
 * terminate lua file luahttpd.lua
 
 ## HTTP サーバの叩き方
 
-サンプルとして show 系のコマンドを取れるようにしています。
+サンプルとして show 系のコマンドを取れるようにしています。  
 コマンドのスペースをスラッシュに置換してください。(例：show config → show/config)
 
 * http://<ルーターのIPアドレス>:11111/show/status/dhcp
